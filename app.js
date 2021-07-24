@@ -7,6 +7,9 @@ function makeRows(rows, cols) {
     let cell = document.createElement("div");
     // cell.innerText = (c + 1);
     container.appendChild(cell).className = "grid-item";
+    cell.addEventListener('mouseenter',function (){
+        cell.style.backgroundColor = 'black';
+    })
   };
 };
 
