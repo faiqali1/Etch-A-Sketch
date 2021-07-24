@@ -14,10 +14,16 @@
     <div class="sub-heading">
         Drawing with your mouse
     </div>
-    <div class="buttons">
-        <button type="button" onclick='reset()'>Reset</button>
-        
+    <div class="buttons">   
+    <div class="slidecontainer">
+        <p>Adjust the Block Size</p>
+        <input type="range" min="1" max="100" value="16" id ="range">
+        <p>Value: <span id="demo"></span></p>
         <!--  add other buttons if necessary -->
+    </div>
+
+    <button type="button" onclick='reset()'>Reset</button>
+        
     </div>
     <div id="drawing-board">
        

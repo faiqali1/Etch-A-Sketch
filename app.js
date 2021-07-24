@@ -38,3 +38,13 @@ function changeSize(num) {
 }
 
 makeRows(16, 16);
+
+
+var slider = document.getElementById("range");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+  output.innerHTML = this.value;
+  changeSize(this.value)
+}
